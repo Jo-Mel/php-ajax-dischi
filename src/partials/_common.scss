@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $primaryColor;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: $bgElements;
+
+    & img {
+        height: $logoH;
+        padding-left: 200px;
+        margin-top: 10px;
+    }
+}
+
+.container {
+    width: $ctnWidth;
+    margin: 0 auto;
+    height: 100%;
+}

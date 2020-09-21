@@ -1,19 +1,13 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);* {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
   box-sizing: border-box;
 }
 
 body {
   background: #1E2D3B;
   min-height: 100vh;
-}
-
-.container {
-  width: 1070px;
-  height: 100%;
-  margin: 0 auto;
+  font-family: "Lato", sans-serif;
 }
 
 header {
@@ -24,47 +18,51 @@ header {
 
 header img {
   height: 50px;
+  padding-left: 200px;
   margin-top: 10px;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .cds-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 100px 0;
 }
 
-.cd {
+.cds-container .cd {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   flex-direction: column;
-  flex-basis: 200px;
-  padding: 20px;
-  margin: 10px 20px;
-  height: 360px;
-  background: #2e3a46;
-  text-align: center;
-}
-
-.cd img {
-  max-width: 100%;
-}
-
-.cd h3 {
-  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   color: white;
-  font-size: 22px;
-  text-transform: uppercase;
+  padding: 30px;
+  margin: 30px;
+  background: #2e3a46;
+  transition: transform 0.2s ease-in-out;
 }
 
-.cd span.author {
-  color: grey;
-  font-size: 20px;
+.cds-container .cd:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #000;
+  cursor: pointer;
 }
 
-.cd span.year {
-  color: grey;
+.cds-container .cd img {
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+
+.cds-container .cd span {
+  display: block;
+  margin: 10px 0;
+  color: lightgrey;
 }
 

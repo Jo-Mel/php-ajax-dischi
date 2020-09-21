@@ -11,6 +11,11 @@
     <title>Dischi</title>
 </head>
 <body>
+    <header>
+         <div class="header-container">
+         <img src="http://pluspng.com/img-png/spotify-logo-png-open-2000.png" alt="logo">
+    </div>
+    </header>
     <div class="cds-container container">
     <?php foreach($database as $data){?>
         <div class="cd">

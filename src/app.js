@@ -6,7 +6,7 @@ $(document).ready(function() {
     method: "GET",
     success: function(risposta) {
       insertCd(risposta);
-      console.log(risposta);
+      //   console.log(risposta);
     },
     error: function() {
       alert("errore");
@@ -20,7 +20,7 @@ function insertCd(data) {
 
   for (var i = 0; i < data.length; i++) {
     var context = data[i];
-    console.log(context);
+    // console.log(context);
 
     var html = template(context);
     $(".cds-container").append(html);

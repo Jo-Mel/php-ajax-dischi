@@ -1,0 +1,30 @@
+.cds-container {
+    @include flex (center, center, wrap, row);
+
+    .cd {
+        @include flex (center, center, nowrap, column);
+        color: $colorWhite;
+        padding: 30px;
+        margin: $cardMargin;
+        background: $bgElements;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #000;
+            cursor: pointer;
+        }
+
+        img {
+            margin-bottom: 20px;
+            max-width: 250px;
+        }
+
+        span {
+            display: block;
+            margin: 10px 0;
+            color: lightgrey;
+        }
+
+    }
+}

@@ -9,7 +9,11 @@
     <title>Document</title>
 </head>
 <body>
-
+    <header>
+         <div class="header-container">
+         <img src="http://pluspng.com/img-png/spotify-logo-png-open-2000.png" alt="logo">
+    </div>
+    </header>
     <div class="cds-container container"></div>
 
     <script id="entry-template" type="text/x-handlebars-template">
