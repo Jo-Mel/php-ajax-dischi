@@ -10,9 +10,14 @@
 </head>
 <body>
     <header>
-         <div class="header-container">
-         <img src="http://pluspng.com/img-png/spotify-logo-png-open-2000.png" alt="logo">
-    </div>
+        <div class="header-container">
+            <img src="http://pluspng.com/img-png/spotify-logo-png-open-2000.png" alt="logo">
+            
+            <select class="" name="author" id="select-id">
+                <option value="">All</option>
+            </select>
+            
+        </div>
     </header>
     <div class="cds-container container"></div>
 
@@ -24,6 +29,11 @@
               <span class="year">{{year}}</span>
           </div>
         </script>
+
+    <script id="option-template" type="text/x-handlebars-template">
+        <option value="{{ author }}">{{ author }}</option>
+    </script>
+
 
     
     <script src="dist/app.js"></script>

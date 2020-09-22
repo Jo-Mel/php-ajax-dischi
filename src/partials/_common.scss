@@ -14,12 +14,23 @@ header {
     width: 100%;
     height: 70px;
     background: $bgElements;
+    @include flex(flex-start, center, 0, row);
 
     & img {
         height: $logoH;
         padding-left: 200px;
+        padding-right: 40px;
         margin-top: 10px;
     }
+
+    & select {
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+        border-radius: 6px;
+        padding: 4px;
+
+    }
+
 }
 
 .container {

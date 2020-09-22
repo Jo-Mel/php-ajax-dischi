@@ -14,12 +14,25 @@ header {
   width: 100%;
   height: 70px;
   background: #2e3a46;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: 0;
 }
 
 header img {
   height: 50px;
   padding-left: 200px;
+  padding-right: 40px;
   margin-top: 10px;
+}
+
+header select {
+  color: #1E2D3B;
+  border: 1px solid #1E2D3B;
+  border-radius: 6px;
+  padding: 4px;
 }
 
 .container {
