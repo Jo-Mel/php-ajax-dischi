@@ -24,10 +24,11 @@ header {
     }
 
     & select {
-        color: $primaryColor;
-        border: 1px solid $primaryColor;
+        background-color: lighten($bgElements, 8);
+        color: $colorWhite;
+        border: 4px solid $primaryColor;
         border-radius: 6px;
-        padding: 4px;
+        padding: 6px;
 
     }
 
